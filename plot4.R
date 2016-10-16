@@ -26,7 +26,7 @@ my_df$Sub_metering_3 <- as.numeric(my_df$Sub_metering_3)
 
 ##Create the plots
 png("plot4.png",height=480,width=480)
-par(mfrow=c(2,2),mar=c(4,4,2,1))
+par(mfrow=c(2,2))
 
 with(my_df, plot(DateTime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power"))
 with(my_df, plot(DateTime, Voltage, type = "l", xlab = "datetime", ylab = "Voltage"))
